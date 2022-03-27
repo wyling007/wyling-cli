@@ -1,39 +1,33 @@
 {
-  "0": {
-    "manifest": {
-      "name": "wyling-cli",
-      "version": "1.1.1",
-      "description": "一个开源脚手架",
-      "main": "index.js",
-      "bin": {
-        "wyling-cli": "./bin/index.js"
-      },
-      "scripts": {
-        "build": "tsc"
-      },
-      "repository": {
-        "type": "git",
-        "url": "git+https://github.com/wyling007/wyling-cli.git"
-      },
-      "keywords": [],
-      "author": "",
-      "license": "ISC",
-      "bugs": {
-        "url": "https://github.com/wyling007/wyling-cli/issues"
-      },
-      "homepage": "https://github.com/wyling007/wyling-cli#readme",
-      "dependencies": {
-        "commander": "^9.1.0",
-        "fs-extra": "^10.0.1",
-        "inquirer": "^8.2.2",
-        "typescript": "^4.6.3"
-      },
-      "devDependencies": {
-        "@types/fs-extra": "^9.0.13",
-        "@types/inquirer": "^8.2.0"
-      }
-    },
-    "mutation": "unlink",
-    "rootDir": "G:\\Code\\wyling-cli"
+  "name": "wyling-cli",
+  "version": "1.1.1",
+  "description": "一个开源脚手架",
+  "main": "index.js",
+  "bin": {
+    "wyling-cli": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyling007/wyling-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyling007/wyling-cli/issues"
+  },
+  "homepage": "https://github.com/wyling007/wyling-cli#readme",
+  "dependencies": {
+    "commander": "^9.1.0",
+    "fs-extra": "^10.0.1",
+    "inquirer": "^8.2.2",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/inquirer": "^8.2.0"
   }
 }
