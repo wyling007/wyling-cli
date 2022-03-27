@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    //输出commonjs模块
+    "module": "commonjs",
+    //目标语言版本
+    "target": "esnext",
+    //是否生成.map文件
+    "sourceMap": false,
+    //输出目录
+    "outDir": "./bin",
+    //允许使用esmodule
+    "esModuleInterop": true,
+    //允许使用node模块
+    "moduleResolution": "Node",
+    //生成d.ts声明文件
+    "declaration": true,
+    //打印输出的文件
+    "listEmittedFiles": true,
+    //项目根目录
+    "baseUrl": "."
+  },
+  //指定一个匹配列表（属于自动指定该路径下的所有ts相关文件）
+  "include": ["./src"]
+}
