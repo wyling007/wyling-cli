@@ -1,8 +1,7 @@
 {
   "name": "wyling-cli",
-  "version": "1.1.2",
+  "version": "1.1.5",
   "description": "一个开源脚手架",
-  "main": "index.js",
   "bin": {
     "wyling-cli": "./bin/index.js"
   },
