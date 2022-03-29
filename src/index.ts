@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+//第一行其中#!/usr/bin/env node表示用node解析器执行本文件。
+
 import commander from 'commander';
 import { cteateHandler, logVersion } from './command';
 
