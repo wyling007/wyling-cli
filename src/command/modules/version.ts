@@ -1,9 +1,9 @@
 import fs from 'fs-extra';
 import path from 'path';
 
-export const logVersion = () => {
+export const getVersion = () => {
   const packageJson = fs.readJSONSync(
     path.resolve(__dirname, '../../../package.json'),
   );
-  console.log(packageJson.version);
+  return packageJson.version;
 };
