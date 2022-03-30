@@ -32,6 +32,6 @@ jobs:
         run: pnpm build
 
       - name: 发布NPM包
-        run: npm publish || true
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
