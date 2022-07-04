@@ -1,14 +1,15 @@
-<template>
-  <router-view></router-view>
-</template>
-
-<script setup lang="ts">
-import { Component } from "vue-property-decorator";
-import Vue from "vue";
+<script lang="ts">
+import { Component } from 'vue-property-decorator';
+import Vue from 'vue';
+console.log(123);
 
 @Component({})
 export default class Index extends Vue {}
 </script>
+
+<template>
+  <router-view></router-view>
+</template>
 
 <style>
 * {

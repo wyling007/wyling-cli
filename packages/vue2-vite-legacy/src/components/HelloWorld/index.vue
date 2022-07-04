@@ -1,18 +1,17 @@
-<script setup lang="ts">
-import { Component } from "vue-property-decorator";
-import Vue from "vue";
+<script lang="ts">
+import { Component } from 'vue-property-decorator';
+import Vue from 'vue';
 
 @Component({})
 export default class Index extends Vue {
-  test: string = "自组建";
+  test = '自组建';
 }
 </script>
-
 
 <template>
   <div class="helloWorld-box">
     <img src="../../assets/logo.png" alt="" />
-    <span>恭喜你！成功用上了兼容ie11的vue2基础框架</span>
+    <span>恭喜你！成功用上了兼容ie11的vue2基础框架{{ test }}</span>
   </div>
 </template>
 
