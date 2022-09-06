@@ -1,16 +1,13 @@
 import { defineStore } from 'pinia';
+import { UserInfoModel } from '@/api';
 
 type UserStoreModel = {
-  user?: {
-    username: string;
-  };
+  userInfo: UserInfoModel | null;
 };
 
-export const useUserStore = defineStore('user', {
-  state: (): UserStoreModel => ({}),
-  actions: {
-    setUser(user: UserStoreModel['user']) {
-      this.$state.user = user;
-    },
-  },
+export const useUserStore = defineStore('User', {
+  state: (): UserStoreModel => ({
+    userInfo: null,
+  }),
+  persist: true,
 });

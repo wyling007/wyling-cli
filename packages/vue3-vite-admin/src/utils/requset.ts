@@ -22,9 +22,9 @@ export const useRequest = (baseConfig?: AxiosRequestConfig) => {
       case 'all':
         return response;
       case 'data':
-        return response.data;
+        return response?.data;
       default:
-        return response.data;
+        return response?.data;
     }
   };
 

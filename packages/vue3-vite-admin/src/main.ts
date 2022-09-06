@@ -1,10 +1,10 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import { router } from '@/router';
-import { pinia } from '@/store';
+import { initAllPlugins } from './plugins';
 
-const app = createApp(App);
+export const app = createApp(App);
 
-app.use(pinia);
-app.use(router);
+//引入所有插件
+initAllPlugins(app);
+//挂载vue实例
 app.mount('#app');

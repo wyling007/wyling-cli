@@ -5,6 +5,9 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  globals: {
+    PROJECT_BUILD_TIME: 'readonly',
+  },
   extends: [
     'eslint:recommended',
     'plugin:vue/vue3-essential',
@@ -16,5 +19,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'vue/multi-word-component-names': 0,
+  },
 };
