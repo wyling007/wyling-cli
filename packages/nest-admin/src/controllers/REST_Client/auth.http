@@ -1,0 +1,17 @@
+@baseUrl = http://127.0.0.1:3009/system/auth
+
+###登陆
+
+POST {{baseUrl}}/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "superAdmin",
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+}
+
+###获取权限树
+
+GET {{baseUrl}}/getPermissionTree HTTP/1.1
+content-type: application/json
+

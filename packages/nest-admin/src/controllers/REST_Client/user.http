@@ -1,0 +1,15 @@
+@baseUrl = http://127.0.0.1:3009/system/user
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzdXBlckFkbWluIiwiZW1haWwiOm51bGwsInBob25lIjpudWxsLCJpYXQiOjE2NjA3NTQ2MjEsImV4cCI6MTY2MTM1OTQyMX0.WUGj097pO80QzvSF8vOcs3vq2MddTg1ILJSsoxIRyD0
+
+
+###查询用户列表
+
+GET {{baseUrl}}/?pageNum=1&pageSize=10 HTTP/1.1
+content-type: application/json
+Authorization: {{token}}
+
+###删除单个用户
+
+DELETE  {{baseUrl}}/32 HTTP/1.1
+content-type: application/json
+Authorization: {{token}}
