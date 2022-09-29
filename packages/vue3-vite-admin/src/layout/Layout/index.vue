@@ -37,7 +37,7 @@ import Header from '@/layout/components/Header.vue';
   .aside-box {
     background-color: #ffffff;
     border-radius: 12px;
-    overflow: hidden;
+    overflow: auto;
     margin-right: 12px;
     border: 1px solid #eeeeee;
   }

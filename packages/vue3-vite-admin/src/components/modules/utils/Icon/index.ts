@@ -129,7 +129,7 @@ const iconJson = [
   },
 ] as const;
 
-type IconNameType = typeof iconJson[number]['font_class'];
+export type IconNameType = typeof iconJson[number]['font_class'];
 
 export const icon = (iconName: IconNameType) => {
   return h('i', { class: `iconfont icon-${iconName}` });

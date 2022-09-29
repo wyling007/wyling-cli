@@ -1,12 +1,19 @@
 import { test, expect, beforeAll } from 'vitest';
 import { AuthApi, instance } from '@/api';
 import { UserApi } from '../modules/user';
+import { wrapper } from 'axios-cookiejar-support';
+import { CookieJar } from 'tough-cookie';
+
+declare module 'axios' {
+  interface AxiosRequestConfig {
+    jar?: CookieJar;
+  }
+}
 
 beforeAll(() => {
-  instance.interceptors.request.use((config) => {
-    config.baseURL = 'http://localhost:3009';
-    return config;
-  });
+  instance.defaults.baseURL = 'http://localhost:3009';
+  instance.defaults.jar = new CookieJar();
+  wrapper(instance);
 });
 
 test('登陆测试', async () => {

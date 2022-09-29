@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    //输出commonjs模块
+    "module": "ESNext",
+    //目标语言版本
+    "target": "ES2016",
+    //是否生成.map文件
+    "sourceMap": false,
+    //允许使用esmodule
+    "esModuleInterop": true,
+    //允许使用node模块
+    "moduleResolution": "Node",
+    //生成d.ts声明文件
+    "declaration": true,
+    //打印输出的文件
+    "listEmittedFiles": true,
+    //项目根目录
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@wyling/*": ["packages/*/src"]
+    }
+  }
+}

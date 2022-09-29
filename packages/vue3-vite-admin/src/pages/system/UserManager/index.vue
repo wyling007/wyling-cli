@@ -2,6 +2,7 @@
 import { Edit, Search } from '@element-plus/icons-vue';
 import { ref } from 'vue';
 import AddUserDialog from './components/AddUserDialog.vue';
+import { AddUserDialogTest } from './components/AddUserDialog';
 import { useUserList, useDeleteUser, useComponent } from '@/hooks';
 
 //用户列表
@@ -14,6 +15,9 @@ const searchShow = ref(true);
 const AddUserDialogRef = useComponent(AddUserDialog, {
   onSuccessCallback: getUserList,
 });
+
+/** 新增用户弹窗实例 */
+const AddUserDialogRef2 = useComponent(AddUserDialogTest);
 
 //删除逻辑
 const { confirmDeleteUser } = useDeleteUser({
@@ -37,7 +41,7 @@ const { confirmDeleteUser } = useDeleteUser({
     </div>
     <div class="control-box">
       <div class="left">
-        <el-button type="success" @click="AddUserDialogRef?.show">新增用户</el-button>
+        <el-button type="success" @click="AddUserDialogRef2?.show">新增用户</el-button>
         <el-button type="danger">批量删除</el-button>
       </div>
       <div class="right">
